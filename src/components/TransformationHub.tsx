@@ -58,12 +58,13 @@ export function TransformationHub() {
                       key={item}
                       className="flex items-center gap-2.5 bg-white rounded-xl px-4 py-3 shadow-2xs border border-white/80"
                     >
-                      <Zap className="w-4 h-4 text-brand-purple shrink-0 fill-brand-purple stroke-none" />
+                      <Zap className="w-4 h-4 text-brand-purple shrink-0 stroke-brand-purple fill-none stroke-[2]" />
                       <span className="text-xs sm:text-sm font-medium text-slate-800">
                         {item}
                       </span>
                     </div>
                   ))}
+
                 </div>
 
                 <div>

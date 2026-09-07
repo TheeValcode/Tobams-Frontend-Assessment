@@ -61,14 +61,13 @@ export function Testimonials() {
           </h2>
         </div>
 
-        {/* Testimonials Cards Slider/Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Desktop View: 3 Column Grid */}
+        <div className="hidden md:grid md:grid-cols-3 gap-6">
           {testimonialsData.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-red-100/60 border-l-4 border-l-brand-red flex flex-col justify-between space-y-4 hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 shadow-xs border border-slate-100 border-l-4 border-l-brand-red flex flex-col justify-between space-y-4 hover:shadow-md transition-shadow"
             >
-              {/* User Avatar & Info */}
               <div className="flex items-center gap-3">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border border-slate-100">
                   <Image
@@ -87,7 +86,6 @@ export function Testimonials() {
                 </div>
               </div>
 
-              {/* Quote Text */}
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
                 {item.text}
               </p>
@@ -95,24 +93,54 @@ export function Testimonials() {
           ))}
         </div>
 
-        {/* Carousel Navigation Buttons */}
-        <div className="flex justify-end gap-2 pt-2">
+        {/* Mobile View: Single Item Active Slider */}
+        <div className="block md:hidden">
+          <div className="bg-white rounded-2xl p-6 shadow-xs border border-slate-100 border-l-4 border-l-brand-red flex flex-col justify-between space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border border-slate-100">
+                <Image
+                  src={testimonialsData[currentIndex].avatar}
+                  alt={testimonialsData[currentIndex].name}
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-sm font-bold text-slate-900">
+                  {testimonialsData[currentIndex].name}
+                </h3>
+                <p className="text-xs text-slate-500">
+                  {testimonialsData[currentIndex].role}, {testimonialsData[currentIndex].company}
+                </p>
+              </div>
+            </div>
+
+            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+              {testimonialsData[currentIndex].text}
+            </p>
+          </div>
+        </div>
+
+        {/* Carousel Indicator Navigation Buttons (< >) */}
+        <div className="flex justify-end gap-2.5 pt-2">
           <button
             onClick={handlePrev}
-            className="w-9 h-9 rounded-full bg-brand-pink-bg hover:bg-brand-purple/10 flex items-center justify-center text-brand-purple transition-colors focus:outline-none"
+            className="w-8 h-8 rounded-md bg-[#FCD9DD] text-brand-red hover:bg-brand-red hover:text-white flex items-center justify-center transition-colors focus:outline-none cursor-pointer"
             aria-label="Previous testimonial"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
           </button>
           <button
             onClick={handleNext}
-            className="w-9 h-9 rounded-full bg-brand-pink-bg hover:bg-brand-purple/10 flex items-center justify-center text-brand-purple transition-colors focus:outline-none"
+            className="w-8 h-8 rounded-md bg-[#FCD9DD] text-brand-red hover:bg-brand-red hover:text-white flex items-center justify-center transition-colors focus:outline-none cursor-pointer"
             aria-label="Next testimonial"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-5 h-5 stroke-[2.5]" />
           </button>
         </div>
       </div>
     </section>
   );
 }
+

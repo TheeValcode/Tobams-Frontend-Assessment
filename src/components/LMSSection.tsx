@@ -17,9 +17,9 @@ export function LMSSection() {
     <section className="w-full bg-[#E9E2E7] py-16 md:py-24 border-y border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* Left Column: Asymmetrical Rounded Image */}
+          {/* Left Column: Circular Image */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-tl-[80px] rounded-br-[80px] rounded-tr-3xl rounded-bl-3xl overflow-hidden border-4 border-white shadow-xl shrink-0">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl shrink-0">
               <Image
                 src="/03f9d7af15f0ea1c24958b1735583ae7eab882f1.jpg"
                 alt="Corporate professionals smiling"
@@ -29,6 +29,7 @@ export function LMSSection() {
               />
             </div>
           </div>
+
 
           {/* Right Column: Title, Description Box, Bullet Grid, CTA */}
           <div className="lg:col-span-7 space-y-6">

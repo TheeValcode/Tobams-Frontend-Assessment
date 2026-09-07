@@ -33,17 +33,18 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-xs">
       {/* Top Header Row */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between border-b border-slate-200">
-        {/* Brand Logo - Enlarged */}
+        {/* Brand Logo - Extra Large */}
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/f110fd4f935cdabd8ef9636a8144267e4494e408.png"
             alt="Tobams Group Logo"
-            width={210}
-            height={60}
+            width={260}
+            height={80}
             priority
-            className="h-12 sm:h-14 w-auto object-contain"
+            className="h-14 sm:h-16 md:h-20 w-auto object-contain"
           />
         </Link>
+
 
         {/* Top Right Actions (Account & CTA) */}
         <div className="hidden md:flex items-center gap-3">
@@ -85,14 +86,15 @@ export function Navbar() {
           </Button>
         </div>
 
-        {/* Mobile Hamburger Toggle Button */}
+        {/* Mobile Hamburger Toggle Button - Dark Pill */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-purple"
+          className="md:hidden p-2 bg-[#1A0A26] text-white hover:bg-brand-purple rounded-md focus:outline-none focus:ring-2 focus:ring-brand-purple transition-colors cursor-pointer"
           aria-label="Toggle menu"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5 stroke-[2.5]" />}
         </button>
+
       </div>
 
       {/* Main Navigation Row (Desktop) */}
