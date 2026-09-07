@@ -4,10 +4,12 @@ A pixel-perfect, fully responsive, production-ready Next.js (App Router) + Tailw
 
 ---
 
-## 🔗 Project & Live Deployment Links
+## 🔗 Project, Figma & Live Deployment Links
 
-- **Live Deployment URL**: [https://tobams-frontend-assessment.vercel.app](https://tobams-frontend-assessment.vercel.app) *(or your deployed Vercel URL)*
+- **Live Deployment URL**: [https://tobams-frontend-assessment-fawn.vercel.app/](https://tobams-frontend-assessment-fawn.vercel.app/)
 - **GitHub Repository**: [https://github.com/TheeValcode/Tobams-Frontend-Assessment](https://github.com/TheeValcode/Tobams-Frontend-Assessment)
+- **Figma Design Reference**: [Tobams Group Figma Design](https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=qxnAKp4Ael8QtLYz-0)
+
 
 ---
 
