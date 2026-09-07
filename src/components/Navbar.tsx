@@ -1,7 +1,7 @@
-"use me";
 "use client";
 
 import React, { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, User, Menu, X } from "lucide-react";

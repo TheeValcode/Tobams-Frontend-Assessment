@@ -35,7 +35,7 @@ export function HeroSection() {
 
         {/* Subtitle Paragraph */}
         <p className="text-sm sm:text-base md:text-lg text-slate-200 leading-relaxed max-w-2xl mx-auto font-normal">
-          Our comprehensive range of programs and resources is designed to enhance skills, broaden knowledge, and propel careers forward in today&apos;s ever-evolving world.
+          Our comprehensive range of programs and resources is designed to enhance skills, broaden knowledge, and propel careers forward in today&apos;s ever-evolving landscape.
         </p>
 
         {/* Action CTA Button */}
