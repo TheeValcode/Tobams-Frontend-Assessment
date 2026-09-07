@@ -6,6 +6,8 @@ import { IndividualTraining } from "@/components/IndividualTraining";
 import { CapacityDevelopment } from "@/components/CapacityDevelopment";
 import { ManagementDev } from "@/components/ManagementDev";
 import { TransformationHub } from "@/components/TransformationHub";
+import { TrainingConsultant } from "@/components/TrainingConsultant";
+import { Testimonials } from "@/components/Testimonials";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -20,8 +22,11 @@ export default function Home() {
         <CapacityDevelopment />
         <ManagementDev />
         <TransformationHub />
+        <TrainingConsultant />
+        <Testimonials />
       </main>
       <Footer />
     </div>
   );
 }
+

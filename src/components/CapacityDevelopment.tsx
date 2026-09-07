@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FeatureListItem } from "./ui/FeatureListItem";
 
 const capacityFeatures = [
-  { text: "Tailored Training Programs", highlighted: true },
+  { text: "Tailored Training Programs", highlighted: false },
   { text: "Expert-Led Workshops", highlighted: false },
   { text: "Personalized Mentorship", highlighted: false },
   { text: "Technical Skills Enhancement", highlighted: false },
@@ -40,7 +40,7 @@ export function CapacityDevelopment() {
 
           {/* Image Column (Right) */}
           <div className="lg:col-span-6">
-            <div className="relative w-full h-[280px] sm:h-[360px] md:h-[400px] rounded-2xl overflow-hidden shadow-md">
+            <div className="relative w-full h-[280px] sm:h-[360px] md:h-[400px] rounded-tl-2xl rounded-br-2xl rounded-tr-[60px] rounded-bl-[60px] overflow-hidden shadow-md">
               <Image
                 src="/5c5a12abda242a3deb8ee7eb2002146f0ec1ea57.jpg"
                 alt="Man pointing to whiteboard charts during workshop"
@@ -50,6 +50,7 @@ export function CapacityDevelopment() {
               />
             </div>
           </div>
+
         </div>
       </div>
     </section>

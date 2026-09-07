@@ -4,10 +4,12 @@
   --color-brand-purple: #4B1F5E;
   --color-brand-purple-light: #5B2D6E;
   --color-brand-red: #E8374A;
-  --color-brand-pink-bg: #F5EEF8;
+  --color-brand-pink-bg: #E9E2E7;
+  --color-brand-lms-card: #DACDD7;
   --color-brand-purple-dark: #3A1245;
   --color-brand-teal: #5BCAD8;
 }
+
 
 :root {
   --background: #ffffff;

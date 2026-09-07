@@ -14,12 +14,12 @@ const coursesList = [
 
 export function LMSSection() {
   return (
-    <section className="w-full bg-brand-pink-bg py-16 md:py-24 border-y border-slate-100">
+    <section className="w-full bg-[#E9E2E7] py-16 md:py-24 border-y border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* Left Column: Circular Cropped Image */}
+          {/* Left Column: Asymmetrical Rounded Image */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-lg shrink-0">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-tl-[80px] rounded-br-[80px] rounded-tr-3xl rounded-bl-3xl overflow-hidden border-4 border-white shadow-xl shrink-0">
               <Image
                 src="/03f9d7af15f0ea1c24958b1735583ae7eab882f1.jpg"
                 alt="Corporate professionals smiling"
@@ -36,9 +36,9 @@ export function LMSSection() {
               Learning Management System
             </h2>
 
-            {/* Content Container Card */}
-            <div className="bg-white/60 backdrop-blur-xs rounded-2xl p-6 sm:p-8 space-y-6 border border-brand-purple/10">
-              <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+            {/* Content Container Card with exact #DACDD7 background */}
+            <div className="bg-[#DACDD7] rounded-2xl p-6 sm:p-8 space-y-6 border border-brand-purple/10 shadow-xs">
+              <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-normal">
                 TG Academy is a hub of knowledge and skill-building resources designed to empower tech talents on their learning journey. From technical courses covering the latest programming languages and development frameworks to soft skills training in leadership, effective communication and project management, TG Academy offers a wide range of courses to cater to diverse learning needs. With accessible and interactive learning materials, individuals can enhance their skills and stay ahead in today&apos;s competitive tech landscape.
               </p>
 
@@ -49,8 +49,8 @@ export function LMSSection() {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
                   {coursesList.map((course) => (
-                    <div key={course} className="flex items-center gap-2 text-xs sm:text-sm text-slate-700">
-                      <span className="w-1.5 h-1.5 rounded-full bg-brand-purple shrink-0" />
+                    <div key={course} className="flex items-center gap-2 text-xs sm:text-sm text-slate-800 font-medium">
+                      <span className="w-2 h-2 rounded-full bg-brand-purple shrink-0" />
                       <span>{course}</span>
                     </div>
                   ))}
@@ -63,7 +63,7 @@ export function LMSSection() {
               <Button
                 variant="primary"
                 size="md"
-                className="bg-brand-purple hover:bg-brand-purple-dark px-6 font-medium text-sm"
+                className="bg-brand-purple hover:bg-brand-purple-dark px-6 font-medium text-sm rounded-md"
                 icon={<ArrowUpRight className="w-4 h-4 ml-1" />}
               >
                 Learn More
@@ -75,3 +75,4 @@ export function LMSSection() {
     </section>
   );
 }
+
